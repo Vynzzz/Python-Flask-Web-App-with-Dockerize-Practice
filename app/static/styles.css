@@ -1,0 +1,65 @@
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background: linear-gradient(#2d626a, #428a91, #6f9c97, #f0f1c7, lightgray) no-repeat;
+  background-color: lightgrey;
+}
+
+.content {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f0f1c7;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+.content h1 {
+  color: #333;
+}
+.content table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+.content table th, .content table td {
+  padding: 10px;
+  border: 1px solid #2d626a;
+}
+.content table th th, .content table td th {
+  background-color: white;
+  color: #333;
+}
+.content a {
+  display: inline-block;
+  padding: 8px 16px;
+  margin: 5px;
+  border-radius: 20px;
+  background-color: #2d626a;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+.content a:hover {
+  background-color: #6f9c97;
+}
+.content input {
+  padding: 10px;
+  margin: 5px;
+  border: solid 1px;
+  border-radius: 5px;
+}
+.content #btn_add {
+  background-color: #428a91;
+  color: #fff;
+  cursor: pointer;
+}
+.content #btn_add:hover {
+  background-color: #aecdc7;
+}/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,83 @@
+// Color Variables
+$primary_color: #2d626a;
+$primary_hover_color: #6f9c97;
+$success_color:#428a91;
+$success_hover_color:#aecdc7;
+$highlight:#f0f1c7;
+$title_color: #333;
+
+html{
+    height:100%;
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+    background-size: cover;
+    background: linear-gradient(
+        $primary_color, 
+        $success_color,
+        $primary_hover_color, 
+        $highlight,
+        lightgray) no-repeat;
+    background-color: lightgrey;
+}
+
+.content{
+    max-width: 800px;
+    margin:  20px auto;
+    padding: 20px;
+    background-color: $highlight;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    text-align: center;
+
+    h1{
+        color:$title_color;
+    }
+    table{
+        width: 100%;
+        margin-top: 20px;
+        border-collapse: collapse;
+        th,td{
+            padding: 10px;
+            border: 1px solid $primary_color;
+
+            th{
+                background-color: white;
+                color: $title_color;
+            }
+        }
+    }
+    a{
+        display: inline-block;
+        padding: 8px 16px;
+        margin: 5px;
+        border-radius: 20px;
+        background-color: $primary_color;
+        color: #fff;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+        &:hover{
+            background-color: $primary_hover_color;
+        }
+    }
+
+    input{
+        padding: 10px;
+        margin: 5px;
+        border: solid 1px;
+        border-radius: 5px;
+    }
+
+    #btn_add{
+        background-color: $success_color;
+        color: #fff;
+        cursor: pointer;
+        &:hover{
+            background-color: $success_hover_color;
+        }
+    }
+}
